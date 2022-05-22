@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="2dp"
+    app:cardPreventCornerOverlap="true"
+    app:cardUseCompatPadding="false">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageview_actor"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:layout_margin="@dimen/margin_view_8"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:srcCompat="@drawable/ic_launcher_background"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textview_actor_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Tom Hardy"
+            android:textSize="@dimen/text_size_24"
+            android:textColor="@color/black"
+            android:layout_margin="@dimen/margin_view_8"
+            app:layout_constraintEnd_toStartOf="@id/imageview_actor"
+            app:layout_constraintTop_toTopOf="@id/imageview_actor"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textview_actor_gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Male"
+            android:textSize="@dimen/text_size_18"
+            android:textColor="@color/black"
+            android:layout_margin="@dimen/margin_view_8"
+            app:layout_constraintEnd_toStartOf="@id/imageview_actor"
+            app:layout_constraintTop_toBottomOf="@id/textview_actor_name"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textview_actor_birthday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="1980/4/11"
+            android:textSize="@dimen/text_size_18"
+            android:textColor="@android:color/darker_gray"
+            android:layout_margin="@dimen/margin_view_8"
+            app:layout_constraintEnd_toStartOf="@id/imageview_actor"
+            app:layout_constraintTop_toBottomOf="@id/textview_actor_gender"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textview_actor_country"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="UK"
+            android:textSize="@dimen/text_size_18"
+            android:textColor="#2165B6"
+            android:layout_margin="@dimen/margin_view_8"
+            app:layout_constraintEnd_toStartOf="@id/imageview_actor"
+            app:layout_constraintTop_toBottomOf="@id/textview_actor_birthday"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textview_actor_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="ID"
+            android:textSize="@dimen/text_size_18"
+            android:textColor="@color/black"
+            android:layout_margin="@dimen/margin_view_8"
+            app:layout_constraintEnd_toStartOf="@id/imageview_actor"
+            app:layout_constraintTop_toBottomOf="@id/textview_actor_country"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>
